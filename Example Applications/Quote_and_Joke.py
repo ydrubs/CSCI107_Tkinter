@@ -26,7 +26,7 @@ def get_quote():
     category_list = ['attitude', 'change', 'dreams', 'education', 'future', 'imagination', 'money', 'history']
     category = random.choice(category_list)
     api_url = 'https://api.api-ninjas.com/v1/quotes?category={}'.format(category)
-    response = requests.get(api_url, headers={'X-Api-Key': 'XV998L7AgFsNM5BqkHJfHQ==bzm6P81GbHpGuflR'})
+    response = requests.get(api_url, headers={'X-Api-Key': 'YOUR API KEY HERE'})
     if response.status_code == requests.codes.ok:
         # print(response.text)
 
